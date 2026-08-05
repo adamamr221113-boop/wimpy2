@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wimpy | Home</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <div class="logo"><span>W</span>IMPY</div>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="small-title">WELCOME TO WIMPY</p>
+
+        <h1>
+          GREAT FOOD.
+          <span>GREAT MOMENTS.</span>
+        </h1>
+
+        <p>
+          Discover delicious burgers, crispy fries, refreshing drinks and your
+          favorite Wimpy meals.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="primary-btn">
+            Explore Menu
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#about" class="secondary-btn"> Discover Wimpy </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-circle"></div>
+
+        <div class="burger-image">🍔</div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+      <div class="feature-card">
+        <i class="fa-solid fa-burger"></i>
+
+        <h3>Fresh Food</h3>
+
+        <p>Delicious meals made with quality ingredients.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-star"></i>
+
+        <h3>Wimpy Favorites</h3>
+
+        <p>Enjoy classic Wimpy favorites and modern choices.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>Fast Service</h3>
+
+        <p>Great food and a comfortable dining experience.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h3>Our Locations</h3>
+
+        <p>Find Wimpy branches around Egypt.</p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about section" id="about">
+      <div class="about-image">
+        <div class="about-placeholder">🍔</div>
+      </div>
+
+      <div class="about-content">
+        <p class="section-label">ABOUT WIMPY</p>
+
+        <h2>
+          A Classic Taste,
+          <span>Made Modern.</span>
+        </h2>
+
+        <p>
+          Wimpy is a historic hamburger brand that has been serving customers
+          across the region for decades.
+        </p>
+
+        <p>
+          Today, Wimpy brings a fresh modern experience while keeping the spirit
+          of its classic burgers and meals.
+        </p>
+
+        <a href="#contact" class="primary-btn"> Contact Us </a>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu section" id="menu">
+      <div class="section-heading">
+        <p class="section-label">OUR MENU</p>
+
+        <h2>Choose Your <span>Favorite</span></h2>
+
+        <p>Explore some of the meals inspired by the Wimpy menu.</p>
+      </div>
+
+      <!-- SEARCH -->
+
+      <div class="menu-tools">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a meal..."
+          />
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">All</button>
+
+          <button class="filter-btn" data-category="burger">Burgers</button>
+
+          <button class="filter-btn" data-category="chicken">Chicken</button>
+
+          <button class="filter-btn" data-category="drink">Drinks</button>
+        </div>
+      </div>
+
+      <!-- MENU PRODUCTS -->
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- PRODUCT 1 -->
+
+        <div class="food-card" data-category="burger">
+          <div class="food-image">
+            🍔
+            <span class="popular"> Popular </span>
+          </div>
+
+          <div class="food-info">
+            <h3>Wimpy B</h3>
+
+            <p>A delicious Wimpy burger made for burger lovers.</p>
+
+            <div class="food-bottom">
+              <span class="price"> 250 EGP </span>
+
+              <button class="add-btn" data-name="Wimpy B" data-price="250">
+                Add
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+
+        <div class="food-card" data-category="burger">
+          <div class="food-image">🍔</div>
+
+          <div class="food-info">
+            <h3>New Skool</h3>
+
+            <p>A modern Wimpy burger with a fresh taste.</p>
+
+            <div class="food-bottom">
+              <span class="price"> 280 EGP </span>
+
+              <button class="add-btn" data-name="New Skool" data-price="280">
+                Add
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+
+        <div class="food-card" data-category="burger">
+          <div class="food-image">🍔</div>
+
+          <div class="food-info">
+            <h3>Old Skool</h3>
+
+            <p>A classic-inspired Wimpy burger.</p>
+
+            <div class="food-bottom">
+              <span class="price"> 260 EGP </span>
+
+              <button class="add-btn" data-name="Old Skool" data-price="260">
+                Add
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+
+        <div class="food-card" data-category="burger">
+          <div class="food-image">🍔</div>
+
+          <div class="food-info">
+            <h3>Trufflin' B</h3>
+
+            <p>A rich and flavorful Wimpy burger choice.</p>
+
+            <div class="food-bottom">
+              <span class="price"> 320 EGP </span>
+
+              <button class="add-btn" data-name="Trufflin' B" data-price="320">
+                Add
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 5 -->
+
+        <div class="food-card" data-category="chicken">
+          <div class="food-image">🌯</div>
+
+          <div class="food-info">
+            <h3>Chicken Puri Wrap</h3>
+
+            <p>A tasty chicken wrap with a delicious filling.</p>
+
+            <div class="food-bottom">
+              <span class="price"> 230 EGP </span>
+
+              <button
+                class="add-btn"
+                data-name="Chicken Puri Wrap"
+                data-price="230"
+              >
+                Add
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 6 -->
+
+        <div class="food-card" data-category="drink">
+          <div class="food-image">🥤</div>
+
+          <div class="food-info">
+            <h3>Ocean Breezy</h3>
+
+            <p>A refreshing Wimpy special drink.</p>
+
+            <div class="food-bottom">
+              <span class="price"> 100 EGP </span>
+
+              <button class="add-btn" data-name="Ocean Breezy" data-price="100">
+                Add
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOCATIONS ================= -->
+
+    <section class="locations section" id="locations">
+      <div class="section-heading">
+        <p class="section-label">FIND US</p>
+
+        <h2>Our <span>Locations</span></h2>
+
+        <p>Visit one of our Wimpy locations.</p>
+      </div>
+
+      <div class="locations-grid">
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+
+          <h3>Wimpy Mohandessin</h3>
+
+          <p>47 El Batal Ahmed Abdel Aziz, Dokki, Giza.</p>
+
+          <a href="tel:+201000000000"> Call Branch </a>
+        </div>
+
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+
+          <h3>Wimpy Marassi</h3>
+
+          <p>Marassi, Sidi Abdel Rahman, North Coast.</p>
+
+          <a href="tel:+201000000000"> Call Branch </a>
+        </div>
+
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+
+          <h3>Wimpy Abbas El Akkad</h3>
+
+          <p>Abbas El Akkad, Nasr City, Cairo.</p>
+
+          <a href="tel:+201000000000"> Call Branch </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact section" id="contact">
+      <div class="contact-content">
+        <p class="section-label">CONTACT US</p>
+
+        <h2>Let's <span>Talk.</span></h2>
+
+        <p>Have a question or want to contact Wimpy? Send us a message.</p>
+
+        <div class="contact-info">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+
+            <span> +20 100 000 0000 </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+
+            <span> hello@wimpy.example </span>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm">
+        <div class="input-group">
+          <label> Your Name </label>
+
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="input-group">
+          <label> Email </label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label> Message </label>
+
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn">
+          Send Message
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="footer-logo"><span>W</span>IMPY</div>
+
+      <p>Great food. Great moments.</p>
+
+      <div class="social-icons">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+
+      <p class="copyright">© 2026 Wimpy Project. Educational project.</p>
+    </footer>
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span> Total </span>
+
+          <strong id="cartTotal"> 0 EGP </strong>
+        </div>
+
+        <button id="clearCart" class="clear-btn">Clear Cart</button>
+      </div>
+    </aside>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
